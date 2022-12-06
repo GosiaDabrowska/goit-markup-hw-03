@@ -15,8 +15,29 @@ body {
   --logo-and-shadows-color: #000000;
   --main-text-color: #212121;
   --description-text-color: #757575;
+  --border-bottom-header: #ececec;
 }
-/* gdzieś jest użyty kolor #ECECEC ale nie mogę znaleźć gdzie, zatem go nigdzie nie przyporządkowałam :( */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1600px;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+header {
+  border-bottom-color: var(--border-bottom-header);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
 
 .logo {
   font-family: 'Raleway';
@@ -38,6 +59,9 @@ body {
 
 .nav-list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links {
@@ -81,6 +105,9 @@ a {
 
 .hero-section {
   background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -200,6 +227,13 @@ footer {
 .button-offer:focus {
   background-color: var(--action-color);
   color: var(--background-color);
+}
+
+.nav-list-portfolio {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-name {
