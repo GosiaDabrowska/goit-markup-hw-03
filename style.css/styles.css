@@ -39,7 +39,17 @@ header {
   border-bottom-width: 1px;
 }
 
+nav {
+  display: flex;
+}
+
+/* nie wiem czemu to poniższe nie działa, nie wiem jak doprowadzić kontakt do prawej krawędzi :((( nawet nadając osobną klasę ustawieia justify-content ani justify-self: flex-end nie działały :( Może jest jakiś błąd w kodzie? Kiedy wstawiałam align-self: flex-end to działało ale justify-self już nie */
+nav :last-child {
+  justify-self: flex-end;
+}
+
 .logo {
+  list-style: none;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -60,8 +70,8 @@ header {
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-links {
