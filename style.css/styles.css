@@ -41,6 +41,11 @@ p {
   padding: 0 15px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .header-wrap {
   display: flex;
   align-items: center;
@@ -89,6 +94,7 @@ nav {
 .nav-list {
   display: flex;
   gap: 46px;
+  margin-left: 93px;
 }
 
 .nav-links {
@@ -139,7 +145,7 @@ a {
 .hero-section {
   background-color: var(--accent-color);
   text-align: center;
-  padding: 200 0px;
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -184,7 +190,7 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   font-size: 14px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .atuts-description {
@@ -192,12 +198,16 @@ a {
   color: var(--description-text-color);
 }
 
+.work {
+  padding-top: 0px;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .section-team {
@@ -212,11 +222,15 @@ a {
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+.team-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-names {
   font-weight: 500;
   line-height: 1.19;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -225,7 +239,6 @@ a {
   line-height: 1.19;
   color: var(--description-text-color);
   text-align: center;
-  padding-bottom: 30px;
 }
 
 footer {
@@ -235,20 +248,21 @@ footer {
 }
 
 .footer-list {
-  padding-top: 20px;
-  /*gap: 9px; nie wiem czemu to nie działa*/
+  margin-top: 20px;
 }
 
 .footer-adress {
   line-height: 1.71;
   color: var(--background-color);
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .footer-contact {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .footer-adress:hover {
@@ -273,7 +287,7 @@ footer {
   justify-content: center;
   gap: 8px;
   padding-top: 174px 0px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .button-offer {
@@ -315,6 +329,7 @@ footer {
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
+  padding: 20px 24px;
 }
 
 .project-name {
@@ -322,7 +337,7 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 20px 24px 4px;
+  margin-bottom: 4px;
 }
 
 .project-type {
@@ -330,7 +345,6 @@ footer {
   line-height: 1.88;
   color: var(--description-text-color);
   letter-spacing: 0.03em;
-  padding: 4px 24px 20px;
 }
 
 .images-portfolio {
